@@ -3,7 +3,7 @@
 Este projeto foi desenvolvido usando Reactjs, laravel 9 + docker + ngnix + mysql
 
 para rodar Basta clonar este repositório,
-entrar no projeto backend rodar um composer install
+entrar no projeto backend rodar um composer install, subir os conteiners com docker-compose up -d,
 entrar dentro do conteiner laravel usando o comando docker exec -it laravel /bin/bash
 renomear o arquivo .env.example e mudar as variaveis de ambiente a seu gosto.
 rodar o comando chmod -R 777 storage,
