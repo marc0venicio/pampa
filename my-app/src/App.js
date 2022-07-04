@@ -53,7 +53,7 @@ function App() {
       </Navbar>
       <div className="container col-12">
       <div class="row">
-        {bean.map((item) => (
+        { bean !=='' ? bean.map((item) => (
           
     <div className="col">
             <div className="card mt-4" style={{ width: "18rem" }}>
@@ -70,7 +70,8 @@ function App() {
             </div>
             </div>
           )
-        )}
+        ) : <div>Loading...</div>
+        }
       </div>
       </div>
     </div>

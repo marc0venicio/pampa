@@ -11,6 +11,6 @@ class BreedController extends Controller
     public function index()
     {
         $json = Breed::all();
-        return $json;
+        return response($json, 200);
     }
 }
