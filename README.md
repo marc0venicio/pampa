@@ -5,7 +5,8 @@ Este projeto foi desenvolvido usando Reactjs, laravel 9 + docker + ngnix + mysql
 para rodar Basta clonar este repositório,
 entrar no projeto backend rodar um composer install, subir os conteiners com docker-compose up -d,
 entrar dentro do conteiner laravel usando o comando docker exec -it laravel /bin/bash
-renomear o arquivo .env.example e mudar as variaveis de ambiente a seu gosto.
+renomear o arquivo .env.example e mudar as variaveis de ambiente a seu gosto(atenção ao host do mysql).
+gerar uma key com o comando php artisan generate:key, limpar o cache com php artisan cache:clear e
 rodar o comando chmod -R 777 storage,
 rodar as migrate com php artisan migrate e por fim executar o comando
 php artisan command:breeds, esse comando acionára um evento que irá consumir uma api publica do https://api.thecatapi.com/v1/breeds
