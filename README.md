@@ -7,7 +7,7 @@ entrar no projeto backend rodar um composer install
 entrar dentro do conteiner laravel usando o comando docker exec -it laravel /bin/bash
 renomear o arquivo .env.example e mudar as variaveis de ambiente a seu gosto
 rodar as migrate com php artisan migrate e por fim executar o comando
-php artisan command:breeds.
+php artisan command:breeds, esse comando acionára um evento que irá consumir uma api publica do https://api.thecatapi.com/v1/breeds
 
 e vuala o backend já se encontrara configurado.
 
